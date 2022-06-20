@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <hr />
+    <h3>Bài 3: Tính thuế thu nhập cá nhân</h3>
+    <div class="form-group">
+        <input type="text" id="hoTen1" placeholder="Nhập họ tên" class="form-group">
+    </div>
+    <div class="form-group">
+        <input type="number" id="thuNhap" placeholder="Tổng thu nhập năm" class="form-group">
+    </div>
+    <div class="form-group">
+        <input type="number" id="phuThuoc" placeholder="Người phụ thuộc" class="form-group">
+    </div>
+    <div>
+        <button class="btn btn-success" id="btnTinhThue">Tính tiền thuế</button>
+    </div>
+    <div class="alert alert-warning" id="ketQua_2">
+
+    </div>
+    <hr />
+    <h3>Bài 4: Tính tiền cáp</h3>
+    <div class="form-group row">
+        <div class="col-4">
+            <select id="userType">
+                <option>Chọn loại khách hàng</option>
+                <option value="personal">Người dân</option>
+                <option value="business">Doanh nghiệp</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <input class="form-control" id="userID" placeholder="Nhập mã khách hàng" />
+        </div>
+        <div class="col-4">
+            <input class="form-control" id="premiumChannel" type="number" placeholder="Nhập số kênh cao cấp" />
+        </div>
+        <div class="col-4">
+            <input class="form-control" id="connections" type="number" placeholder="Nhập số kết nối">
+        </div>
+    </div>
+    <button id="btnTinhCap" class="btn btn-success mt-3">Tính tiền cáp</button>
+    <div id="ketQua_B4" class="alert alert-success mt-3"></div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("khachHang").value;
+            if (x === value) {
+                return true;
+            } else {
+                return false;
+            }
+            document.getElementById("soKetNoi").innerHTML = x;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
